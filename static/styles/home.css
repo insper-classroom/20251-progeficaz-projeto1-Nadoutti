@@ -72,3 +72,44 @@ li {
     margin: 5% 0%;
     border-radius: 10px;
 }
+
+.item_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_div {
+    background-color: red;
+    margin-right: 5%;
+    padding: 2%;
+    border-radius: 10px;   
+}
+
+.link_div:hover {
+    background-color: rgb(179, 20, 20);
+    margin-right: 5%;
+    padding: 2%;
+    border-radius: 10px;
+    /* opacity: 0.7;     */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content_div {
+    width: 30%;
+}
+
+.title_note {
+    width: 100%;
+    padding: 10px;
+    border-bottom: black solid 2px;
+}
+
+.content_note {
+    padding-left: 10px;
+}
