@@ -50,3 +50,11 @@ def delete_from_db(id):
     cursor.execute(delete)
     connection.commit()
     connection.close()
+
+def edit_note_db(title, details, id):
+    connection = sql.connect('static/data/notes.db')
+    cursor = connection.cursor()
+    edit = f'''UPDATE notes SET TITULO = '{title}', DETALHES = '{details}' WHERE ID = {id};'''
+    cursor.execute(edit)
+    connection.commit()
+    connection.close()

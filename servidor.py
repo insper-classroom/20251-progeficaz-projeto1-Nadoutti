@@ -29,5 +29,19 @@ def delete(id):
     views.delete_note(id)
     return redirect('/')
 
+@app.route('/edit_page/<int:id>', methods=['GET'])
+def edit_page(id):
+
+    return render_template_string(views.edit_page(id))
+
+@app.route('/edit_note/<int:id>', methods=['POST'])
+def edit_note(id):
+    
+    titulo = request.form.get('titulo')
+    detalhes = request.form.get('detalhes')
+    views.edit_note(titulo, detalhes, id)
+    return redirect('/')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

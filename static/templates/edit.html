@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Get-it</title>
+  <link rel="stylesheet" href="{{{{ url_for('static', filename='styles/home.css') }}}}">
+</head>
+<body>
+  <div class="container">
+    <div class="items_box">
+        <img src="{{{{ url_for('static', filename='img/logo-getit.png') }}}}" class="logo">
+        <h1>Edite sua anotacao aqui!</h1>
+      
+        <form action="/edit_note/{id}" method="POST">
+          <input id="titulo" type="text" name="titulo" value="{title}" class="titulo"/>
+          <input id="detalhes" name="detalhes" value="{details}" class="detalhes"/>
+          <input type="submit" class="submit"/>
+        </form>
+        <a class="voltar" href="/">Voltar</a>
+        
+    </div>
+
+
+  </div>
+
+</body>
+</html>

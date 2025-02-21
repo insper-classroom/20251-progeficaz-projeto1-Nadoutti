@@ -33,6 +33,10 @@ ul {
     padding: 0;
 }
 
+.voltar {
+    color: black;
+}
+
 
 
 .titulo, .detalhes {
@@ -82,9 +86,14 @@ li {
 
 .link_div {
     background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 5%;
     padding: 2%;
-    border-radius: 10px;   
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 .link_div:hover {
@@ -112,4 +121,37 @@ a {
 
 .content_note {
     padding-left: 10px;
+}
+
+.edit_div  {
+    background-color: green;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.edit_div:hover  {
+    background-color: rgb(60, 116, 60);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.edit_div a {
+    padding: 20px;
+
+}
+
+.funcs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 10vh;
+
 }
